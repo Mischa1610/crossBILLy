@@ -1,0 +1,49 @@
+{
+    "name": "@alekseew/crossbilly",
+    "version": "0.0.1",
+    "description": "Project to generate a Web- (PWA), Cross-Platform-App for invoice / bill / customer data ... [Web App (PWA), iOS, Android, Windows and Mac OS X]",
+    "author": "Michael Alekseew",
+    "license": "MIT",
+    "keywords": [
+        "invoice",
+        "bill",
+        "customer",
+        "pwa",
+        "cross-platform",
+        "capacitor",
+        "cordova",
+        "electron",
+        "web",
+        "app",
+        "angular",
+        "giflow",
+        "typescript",
+        "angular-material",
+        "angular-cdk",
+        "prettier",
+        "standard-version",
+        "commitizen",
+        "husky",
+        "lottie",
+        "lottie-web",
+        "animations",
+        "firebase"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Mischa1610/crossBILLy.git"
+    },
+    "bugs": {
+        "url": "https://github.com/Mischa1610/crossBILLy/issues"
+    },
+    "homepage": "https://github.com/Mischa1610/crossBILLy#readme",
+    "engines": {
+        "node": ">=8.11.3",
+        "npm": ">=5.6.0"
+    },
+    "scripts": {
+        "test": "echo 'Currently no tests needed.' && exit 0"
+    },
+    "dependencies": {},
+    "devDependencies": {}
+}
