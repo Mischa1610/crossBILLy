@@ -43,7 +43,7 @@
     },
     "scripts": {
         "preinstall": "test -d .git/hooks || mkdir -v .git/hooks",
-        "postinstall": "npm run prepare-git-commit-template & wip with commitizen",
+        "postinstall": "npm run prepare-git-commit-template && wip with commitizen && cd webapp && npm install",
         "prepare-git-commit-template": "echo '<type:[feat,fix,docs,style,refactor,perf,test,build,chore]>(<scope?>): <subject>\n\n<body?>\n\n<footer?>' > .gitmessage.txt && git config commit.template $PWD/.gitmessage.txt",
         "format-staged": "pretty-quick --staged",
         "format-check": "prettier --config ./.prettierrc --list-different './**/*{.ts,.js,.json,.css,.scss}'",
