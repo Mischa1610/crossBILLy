@@ -1,0 +1,12 @@
+{
+    "hosting": {
+        "public": "webapp/dist/crossBILLy-web",
+        "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+        "rewrites": [
+            {
+                "source": "**",
+                "destination": "/index.html"
+            }
+        ]
+    }
+}

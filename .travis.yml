@@ -1,3 +1,52 @@
+#.travis.yml
+
+sudo: required
+
+dist: trusty
+
 language: node_js
 node_js:
-  - "lts/*"
+    - "lts/*"
+
+addons:
+    apt:
+        sources:
+            - google-chrome
+        packages:
+            - google-chrome-stable
+
+cache:
+    npm: true
+    directories:
+        - $HOME/.npm
+        - node_modules
+
+branches:
+    only:
+        - master
+
+before_install:
+    - set -e
+    - export CHROME_BIN=/usr/bin/google-chrome
+    - export DISPLAY=:99.0
+    - sh -e /etc/init.d/xvfb start
+
+install:
+    - npm install
+
+script:
+    - npm run test
+    - npm run build
+
+after_success:
+    - firebase deploy --token $FIREBASE_TOKEN
+
+notifications:
+    webhooks:
+        on_success: change
+        on_failure: always
+        on_start: false
+    email:
+        on_success: false
+        on_failure: always
+        on_start: false
