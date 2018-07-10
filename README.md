@@ -154,3 +154,8 @@ Checks if the git commit message is a conventional git commit message, otherwise
 The last commit on the release branch should set the project version and generate the Changelog, this should be done with `npm run release`.
 This **set's the project verison**, **generates the changelog** and **commits this changes**.
 More information's can be found under the chapter: **_Conventional Changelog / Commits_**
+
+## Continues Integration & Deployment
+
+On this project **Travis CI** is setup as lint-, test-, e2e-tests- and build-slave.
+If everything was tested and build successfully Travis CI will deploy the **WebApp** to **FireBase**.
