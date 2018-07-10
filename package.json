@@ -42,6 +42,7 @@
         "npm": ">=5.6.0"
     },
     "scripts": {
+        "firebase": "firebase",
         "preinstall": "test -d .git/hooks || mkdir -v .git/hooks",
         "postinstall": "npm run prepare-git-commit-template && wip with commitizen && cd webapp && npm install",
         "prepare-git-commit-template": "echo '<type:[feat,fix,docs,style,refactor,perf,test,build,chore]>(<scope?>): <subject>\n\n<body?>\n\n<footer?>' > .gitmessage.txt && git config commit.template $PWD/.gitmessage.txt",
@@ -77,6 +78,7 @@
         "@commitlint/config-conventional": "^7.0.1",
         "commitizen": "^2.10.1",
         "cz-conventional-changelog": "^2.1.0",
+        "firebase-tools": "^3.19.3",
         "husky": "^0.14.3",
         "npm-run-all": "^4.1.3",
         "prettier": "^1.13.7",
