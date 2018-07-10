@@ -10,6 +10,10 @@
 This repository contains a Web- and Cross-Platform-App (Web PWA, Windows, Mac OS X, iOS and Android) for easy bill generation.
 This project should help to maintain customer data, do the invoicing / billing, ...
 
+The WebApp to this project can be found here: [**crossBILLy** - WebApp](https://crossbilly-5eb5a.firebaseapp.com)
+
+The GitHub Page to this project / repo can be found here: [**crossBILLy** - GitHub Page](https://mischa1610.github.io/crossBILLy)
+
 Used or tryout frameworks, platforms, libraries, plugins, concepts, architectures, techniques, ... are following:
 - Source Control Branching-Model: [**GitFlow**](http://nvie.com/posts/a-successful-git-branching-model)
 - Frontend WebApp Platform / Framework: [**Angular**](https://angular.io)
