@@ -36,6 +36,10 @@ install:
 
 script:
     - npm run test
+    - npm run build
+
+after_success:
+    - firebase deploy --token $FIREBASE_TOKEN
 
 notifications:
     webhooks:
