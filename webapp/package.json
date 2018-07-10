@@ -33,7 +33,8 @@
         "start": "ng serve",
         "start-aot": "npm run start -- --aot",
         "build": "ng build",
-        "test": "ng test",
+        "test": "ng test --watch=false",
+        "test-serve": "ng test",
         "lint": "ng lint",
         "e2e": "ng e2e"
     },
