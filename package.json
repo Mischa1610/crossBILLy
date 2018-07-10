@@ -50,7 +50,7 @@
         "commit-wip": "wip",
         "commit-squash": "naenae",
         "commit": "git-cz",
-        "test": "cd webapp && npm run lint && npm run test",
+        "test": "cd webapp && npm run lint && npm run test && npm run e2e",
         "release": "standard-version",
         "git-clean-repo": "git clean -fdx && git submodule foreach git clean -fdx",
         "clean-project": "mv .idea ../ && npm run git-clean-repo && mv ../.idea ./"
