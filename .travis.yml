@@ -21,9 +21,9 @@ cache:
         - $HOME/.npm
         - node_modules
 
-# branches:
-    # only:
-        # - master
+branches:
+    only:
+        - master
 
 before_install:
     - set -e
