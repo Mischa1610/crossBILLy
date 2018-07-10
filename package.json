@@ -1,6 +1,6 @@
 {
     "name": "@alekseew/crossbilly",
-    "version": "0.0.1",
+    "version": "0.1.0",
     "description": "Project to generate a Web- (PWA), Cross-Platform-App for invoice / bill / customer data ... [Web App (PWA), iOS, Android, Windows and Mac OS X]",
     "author": "Michael Alekseew",
     "license": "MIT",
